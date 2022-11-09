@@ -1,12 +1,13 @@
 function isPalindrome(word) {
   // Write your algorithm here
   const l = word.length
-  const n = (word.length + word.length % 2) / 2
+  //const n = (word.length + word.length % 2) / 2
+  const n = word.length / 2
 
 
   for (i=0;i<n;i++){
 
-    console.log(word[i], word[l-1-i], word[i]===word[l-1-i])
+   console.log(word[i], word[l-1-i], word[i]===word[l-1-i])
 
     if (word[i]!=word[l-1-i])
       return false
